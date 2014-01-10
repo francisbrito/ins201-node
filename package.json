@@ -4,13 +4,14 @@
   "description": "A collection of algorithm and data structures from the assignments of a Software Engineering course.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "grunt test"
   },
   "author": "Francis Brito <fr.br94@gmail.com>",
   "license": "MIT",
   "devDependencies": {
     "should": "~2.1.1",
     "load-grunt-tasks": "~0.2.1",
-    "grunt": "~0.4.2"
+    "grunt": "~0.4.2",
+    "grunt-mocha-test": "~0.8.1"
   }
 }
