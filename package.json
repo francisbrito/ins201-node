@@ -9,6 +9,8 @@
   "author": "Francis Brito <fr.br94@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "should": "~2.1.1"
+    "should": "~2.1.1",
+    "load-grunt-tasks": "~0.2.1",
+    "grunt": "~0.4.2"
   }
 }
