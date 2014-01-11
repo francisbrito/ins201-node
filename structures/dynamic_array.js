@@ -15,11 +15,14 @@ DynamicArray.prototype.push = function (item) {
         this.capacity *= GROWTH_FACTOR;
         this.__items = new Array(this.capacity);
 
-        items.forEach(this.__items.push);
+        for (var i = 0; i < items.length; i++) {
+            var ii = items[i];
+
+            this.__items[i] = ii;
+        }
     }
 
-    this.__items.push(item);
-    this.size++;
+    this.__items[this.size++] = item;
 };
 
 DynamicArray.prototype.pop = function () {
@@ -27,7 +30,7 @@ DynamicArray.prototype.pop = function () {
         throw new Error('Invalid operation.');
     }
 
-    return this.__items.pop();
+    return this.__items[--this.size];
 };
 
 DynamicArray.prototype.at = function (index) {
